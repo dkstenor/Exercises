@@ -13,6 +13,6 @@ def test_solution(monkeypatch):
 
     import solution
     assert type(solution.object_1) == float
-    assert type(solution.object_2_ == str
+    assert type(solution.object_2) == str
     assert type(ret_val1) == str
     assert type(ret_val2) == int
