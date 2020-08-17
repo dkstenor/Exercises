@@ -1,5 +1,5 @@
 # Code your solution here
-def get_bool():
+def shut_down():
     x = (input())
     if x == 'true':
         return("SHUTDOWN")
@@ -8,4 +8,4 @@ def get_bool():
     else:
         return("Not a boolean")
 
-print(get_bool())
+print(shut_down())

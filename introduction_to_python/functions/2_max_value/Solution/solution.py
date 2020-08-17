@@ -1,5 +1,5 @@
 # Code your solution here
-def max_value():
+def max_val():
     x, y, z = input("Enter three integers:  ").split(' ')
     a = int(x)
     b = int(y)
@@ -12,5 +12,5 @@ def max_value():
     return max_value
 
 
-result = max_value()
+result = max_val()
 print(result)

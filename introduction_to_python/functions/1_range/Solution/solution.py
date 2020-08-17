@@ -1,10 +1,10 @@
 # Code your solution here
-def func_call():
+def range_100():
     number = int(input())
     if number <= 100:
         return "GREATNESS"
     else:
         return "OOPS"
 
-result = func_call()
+result = range_100()
 print(result)

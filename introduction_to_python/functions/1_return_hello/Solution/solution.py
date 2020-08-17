@@ -1,7 +1,7 @@
 # Code your solution here
-def ask_name():
-    name = input("What's your name:  ")
+def hello():
+    name = input()
     return(f"Hello {name}")
 
-result = ask_name()
+result = hello()
 print(result)
