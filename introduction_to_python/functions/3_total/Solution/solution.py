@@ -1,8 +1,9 @@
 # Code your solution here
 def sum_data(lst):
     total = 0
-    for num in lst:
-        total = total + num
+    total = [total + num for num in lst]
+    #for num in lst:
+    #    total = total + num
     return total
 
 my_lst = [1, 2, 3, 4, 5]

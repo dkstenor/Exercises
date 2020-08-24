@@ -1,3 +1,9 @@
 # Write your solution here
 def power(a, b):
-    return
+    if b == 0:
+        return 1
+
+    if b >= 1:
+        return a * power(a, b - 1)
+
+print(power(3,2))
