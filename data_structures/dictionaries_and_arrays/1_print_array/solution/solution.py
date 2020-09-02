@@ -1,6 +1,10 @@
 # Write your solution here
-def sum_array(num_list):
-    if num_list == []:
-        return 0
-    else:
-        return num_list[0] + sum_array(num_list[1::])
+import array
+
+def print_array(array_1):
+
+    for i in array_1:
+        print(i)
+
+x = array.array('i', [10,20,30,40])
+print_array(x)
