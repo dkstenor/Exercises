@@ -1,5 +1,4 @@
 # Write your solution here
-def count_down_from(num):
-    print(num)
-    if num >= 1:
-        count_down_from(num-1)
+def print_dict(dict_num):
+    for k, v in dict_num.items():
+        print(v)
