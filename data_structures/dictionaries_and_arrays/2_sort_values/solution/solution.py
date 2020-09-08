@@ -9,4 +9,5 @@ def sort_dict(my_dictionary):
 
     return new_dict
 
-#dict = sort_dict({"Jim": 71, "David": 57, "Simba": 10, "Rufus": 7})
+dict = sort_dict({"Jim": 71, "David": 57, "Simba": 10, "Rufus": 7})
+print(dict)
