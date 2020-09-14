@@ -27,9 +27,20 @@ class Queue:
         return value
 
     # You may want to solve this magic method first!
-    def __len__(self):
-        return
+    # def __len__(self):
+    #     return
 
-    # Fill in the code for __len__
+    # Fill in the code for __len__ls
+
     def __eq__(self, other):
-        return
+        if (len(self) == len(other)):
+            node1 = self.head_node
+            node2 = other.head_node
+            while(node1):
+                if node1.value == node2.value:
+                    return False
+                else:
+                    node1 = node1.next
+                    node2 = node2.next
+                return True
+        return False
