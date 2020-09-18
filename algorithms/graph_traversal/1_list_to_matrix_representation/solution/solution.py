@@ -1,3 +1,5 @@
+import pprint
+
 adjacency_list = {
   0:  [0, 1, 3],
   1:  [3, 4],
@@ -9,10 +11,17 @@ adjacency_list = {
 adjacency_matrix = []
 
 matrix_len = len(adjacency_list.keys())
-for row in range(matrix_len):
-    for col in range(matrix_len):
-        my_matrix = []
-        my_matrix.append(0)
-        adjacency_matrix.append(list(my_matrix))
 
-print(adjacency_matrix)
+for i in range(matrix_len):
+  adjacency_matrix.append([])
+
+for row in range(matrix_len):
+  for col in range(matrix_len):
+    adjacency_matrix[row].append(0)
+
+for key, value in adjacency_list.items():
+  for v in value:
+    adjacency_matrix[key][v] = 1
+  
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(adjacency_matrix)
